@@ -1,0 +1,116 @@
+
+head{
+  background-color: #ebecf1;
+  color: #1f4068;
+}
+
+body{
+  background-color: #ebecf1;
+  color: #1f4068;
+  text-align: center;
+  margin: 0;
+}
+
+strong{
+  color: #1b1c25;
+}
+a{
+  color: #206a5d;
+}
+h1{
+  color: #1b1c25;
+  margin: 0 auto 0 auto;
+}
+h3{
+  color: #1b1c25;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 15%;
+  padding: 8px;
+}
+
+table{
+  color: #1f4068;
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+.profile-pic{
+  height: 150px;
+  padding-top: 2em;
+}
+.socials{
+  line-height: 2;
+  font-size: 2em;
+  font-stretch: expanded;
+}
+.bg{
+  width: 100%;
+  padding: 30px;
+}
+.bg-green{
+  background-color: #206a5d;
+  color: #ebecf1;
+}
+.bg-white{
+  background-color: #ebecf1;
+  color: #1f4068;
+}
+.bg-blue{
+  background-color: #1f4068;
+  color: #ebecf1;
+}
+
+.section{
+  padding: 30px;
+}
+.skills{
+  width: 50%;
+  margin: 0 auto;
+}
+.hobbies{
+  width: 50%;
+  margin: 0 auto;
+}
+.dogs{
+  width: 50%;
+  margin: 0 auto;
+}
+.dog-row{
+  text-align: justify;
+  line-height: 1.5;
+  padding: 15px 0 15px;
+  overflow: auto;
+}
+
+.dog-text{
+  padding: 15px 0;
+}
+
+.dog-pic{
+  border-radius: 50%;
+  height: 150px;
+}
+
+.dog-pic-left{
+  float: left;
+  margin: 30px 30px 0 0;
+}
+
+.dog-pic-right{
+  float: right;
+  margin: 30px 0 0 30px;
+}
+
+.work-experience{
+  width: 50%;
+  margin: 100px auto 100px;
+}
+
+.work-row{
+  text-align: justify;
+  line-height: 1.5;
+}
