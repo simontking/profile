@@ -14,11 +14,11 @@ body{
 strong{
   color: #1b1c25;
 }
+
 a{
   color: #206a5d;
 }
 h1{
-  color: #1b1c25;
   margin: 0 auto 0 auto;
 }
 h3{
@@ -38,18 +38,27 @@ table{
   width: 50%;
   margin: 0 auto 0 auto;
 }
-.profile-pic{
-  height: 150px;
-  padding-top: 2em;
-}
-.socials{
-  line-height: 2;
-  font-size: 2em;
-  font-stretch: expanded;
-}
+
 .bg{
   width: 100%;
-  padding: 30px;
+  padding: 2em;
+  padding: 0;
+}
+.bg-sky{
+background-image: linear-gradient(black, #1b1c25);
+ color: #206a5d;
+ position: relative;
+}
+.bg-cloud{
+background-image: linear-gradient(#1b1c25, #ebecf1);
+ color: #1f4068;
+ padding-top: 2em;
+}
+
+.cloud-img{
+   background-image: url("../Images/Cloud.jpg");
+   width: 100%;
+   padding: 0;
 }
 .bg-green{
   background-color: #206a5d;
@@ -65,14 +74,36 @@ table{
 }
 
 .section{
-  padding: 30px;
+  padding: 2rem;
 }
+
+.profile-pic{
+  height: 10rem;
+  padding-top: 5em;
+}
+.moon{
+  width: 50%;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.socials{
+  line-height: 2;
+  font-size: 2em;
+  font-stretch: expanded;
+}
+.bg-cloud a{
+ color: #1f4068;
+}
+
 .skills{
   width: 50%;
+  line-height: 1.5;
   margin: 0 auto;
 }
 .hobbies{
   width: 50%;
+  line-height: 1.5;
   margin: 0 auto;
 }
 .dogs{
@@ -82,32 +113,32 @@ table{
 .dog-row{
   text-align: justify;
   line-height: 1.5;
-  padding: 15px 0 15px;
+  padding: 1rem 0 1rem;
   overflow: auto;
 }
 
 .dog-text{
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 
 .dog-pic{
   border-radius: 50%;
-  height: 150px;
+  height: 10rem;
 }
 
 .dog-pic-left{
   float: left;
-  margin: 30px 30px 0 0;
+  margin: 2rem 2rem 0 0;
 }
 
 .dog-pic-right{
   float: right;
-  margin: 30px 0 0 30px;
+  margin: 2rem 0 0 2rem;
 }
 
 .work-experience{
   width: 50%;
-  margin: 100px auto 100px;
+  margin: 10% auto 10%;
 }
 
 .work-row{
