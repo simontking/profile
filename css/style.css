@@ -159,7 +159,7 @@ table {
 
 .work-experience {
   width: 50%;
-  margin: 10% auto 10%;
+  margin: 2em auto;
 }
 
 .work-row {
@@ -167,6 +167,11 @@ table {
   line-height: 1.5;
 }
 
+.home{
+  top:0;
+  left:0;
+  position:fixed;
+}
 
 .education-topbar{
   position: fixed;
