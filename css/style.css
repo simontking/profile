@@ -1,147 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Scope+One&display=swap');
 
-head{
-  background-color: #ebecf1;
-  color: #1f4068;
+head {
+  background-color: hsl(230, 18%, 93%);
+  color: hsl(230, 54%, 26%);
 }
 
-body{
-  background-color: #ebecf1;
-  color: #1f4068;
+body {
+  background-color: hsl(230, 18%, 93%);
+  color: hsl(230, 54%, 26%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   text-align: center;
   margin: 0;
 }
 
-strong{
-  color: #1b1c25;
+strong {
+  font-weight: 800;
 }
 
-a{
-  color: #206a5d;
+a {
+  color: hsl(169, 54%, 27%);
 }
-h1{
+
+h1 {
   margin: 0 auto 0 auto;
-}
-h3{
-  color: #1b1c25;
+  font-family: 'Scope One', serif;
+  font-weight: 800;
+  font-size: 3em;
+
 }
 
-hr{
+h3 {
+  color: hsl(230, 18%, 10%);
+}
+
+hr {
   border-style: none;
   border-top-style: dotted;
   border-width: 5px;
   width: 15%;
   padding: 8px;
+  margin-bottom: 0;
 }
 
-table{
-  color: #1f4068;
+table {
+  color: hsl(230, 54%, 26%);
   width: 50%;
   margin: 0 auto 0 auto;
 }
 
-.bg{
+.bg {
   width: 100%;
   padding: 2em;
   padding: 0;
 }
-.bg-sky{
-background-image: linear-gradient(black, #1b1c25);
- color: #206a5d;
- position: relative;
-}
-.bg-cloud{
-background-image: linear-gradient(#1b1c25, #ebecf1);
- color: #1f4068;
- padding-top: 2em;
+
+.bg-sky {
+  background-image: linear-gradient(black, hsl(230, 18%, 10%));
+  color: hsl(169, 54%, 27%);
+  position: relative;
 }
 
-.cloud-img{
-   background-image: url("../Images/Cloud.jpg");
-   width: 100%;
-   padding: 0;
-}
-.bg-green{
-  background-color: #206a5d;
-  color: #ebecf1;
-}
-.bg-white{
-  background-color: #ebecf1;
-  color: #1f4068;
-}
-.bg-blue{
-  background-color: #1f4068;
-  color: #ebecf1;
+.bg-cloud {
+  background-image: linear-gradient(hsl(230, 18%, 10%), hsl(230, 18%, 93%));
+  color: hsl(230, 54%, 26%);
+  padding-top: 2em;
 }
 
-.section{
+.cloud-img {
+  background-image: url("../Images/Cloud.jpg");
+  width: 100%;
+  padding: 0;
+}
+
+.bg-green {
+  background-color: hsl(169, 54%, 27%);
+  color: hsl(230, 18%, 93%);
+}
+
+.bg-white {
+  background-color: hsl(230, 18%, 93%);
+  color: hsl(230, 54%, 26%);
+}
+
+.bg-blue {
+  background-color: hsl(230, 54%, 26%);
+  color: hsl(230, 18%, 93%);
+}
+
+.section {
   padding: 2rem;
 }
 
-.profile-pic{
+.profile-pic {
   height: 10rem;
   padding-top: 5em;
 }
-.moon{
+
+.moon {
   width: 50%;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
 }
-.socials{
+
+.socials {
   line-height: 2;
   font-size: 2em;
   font-stretch: expanded;
 }
-.bg-cloud a{
- color: #1f4068;
+
+.bg-cloud a {
+  color: hsl(230, 54%, 26%);
 }
 
-.skills{
+.skills {
   width: 50%;
   line-height: 1.5;
   margin: 0 auto;
 }
-.hobbies{
+
+.hobbies {
   width: 50%;
   line-height: 1.5;
   margin: 0 auto;
 }
-.dogs{
+
+.dogs {
   width: 50%;
   margin: 0 auto;
 }
-.dog-row{
+
+.dog-row {
   text-align: justify;
   line-height: 1.5;
   padding: 1rem 0 1rem;
   overflow: auto;
 }
 
-.dog-text{
+.dog-text {
   padding: 1rem 0;
 }
 
-.dog-pic{
+.dog-pic {
   border-radius: 50%;
   height: 10rem;
 }
 
-.dog-pic-left{
+.dog-pic-left {
   float: left;
   margin: 2rem 2rem 0 0;
 }
 
-.dog-pic-right{
+.dog-pic-right {
   float: right;
   margin: 2rem 0 0 2rem;
 }
 
-.work-experience{
+.work-experience {
   width: 50%;
   margin: 10% auto 10%;
 }
 
-.work-row{
+.work-row {
   text-align: justify;
   line-height: 1.5;
+}
+
+
+.education-topbar{
+  position: fixed;
+  width: 100%;
+  top:0;
+  height: 5em;
+  padding: 2rem;
+}
+
+.education-sidebar{
+  position: fixed;
+  overflow: hidden;
+  top:7em;
+  left: 0;
+  height: 100%;
+  width: 15%;
+  z-index: 1;
+  padding-top: 2em;
+}
+.education-sidebar a {
+  padding: 16px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 2em;
+  color: hsl(230, 18%, 75%);
+  display: block;
+}
+
+.education-sidebar a:hover {
+  color: hsl(230, 18%, 95%);
+}
+.education-main{
+  top:5em;
+  padding: 5em auto 10%;
+  text-align: left;
+  margin-left: 15%;
+  width: 70%;
+}
+.education-list
+{
+  margin-top:9em;
 }
