@@ -51,7 +51,6 @@ table {
 
 .bg {
   width: 100%;
-  padding: 2em;
   padding: 0;
 }
 
@@ -59,6 +58,8 @@ table {
   background-image: linear-gradient(black, hsl(230, 18%, 10%));
   color: hsl(169, 54%, 27%);
   position: relative;
+
+  padding-bottom: 2em;
 }
 
 .bg-cloud {
@@ -90,6 +91,9 @@ table {
 
 .section {
   padding: 2rem;
+  width: 50%;
+  line-height: 1.5;
+  margin: 0 auto;
 }
 
 .profile-pic {
@@ -114,22 +118,6 @@ table {
   color: hsl(230, 54%, 26%);
 }
 
-.skills {
-  width: 50%;
-  line-height: 1.5;
-  margin: 0 auto;
-}
-
-.hobbies {
-  width: 50%;
-  line-height: 1.5;
-  margin: 0 auto;
-}
-
-.dogs {
-  width: 50%;
-  margin: 0 auto;
-}
 
 .dog-row {
   text-align: justify;
@@ -142,6 +130,10 @@ table {
   padding: 1rem 0;
 }
 
+.rugby-pic {
+  border-radius: 50%;
+  height: 10rem;
+}
 .dog-pic {
   border-radius: 50%;
   height: 10rem;
