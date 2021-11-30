@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Beyond Coaching</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- Favicons -->
+
+  <script src="https://kit.fontawesome.com/835da82c23.js" crossorigin="anonymous"></script>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+  }
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .bgimg-1 {
+    background-image: url("./Images/Gold.jpg");
+    min-height: 400px;
+  }
+
+  .bgimg-2 {
+    background-image: url("./Images/Green.jpg");
+    min-height: 400px;
+  }
+
+  .bgimg-3 {
+    background-image: url("./Images/Black.jpg");
+    min-height: 400px;
+  }
+
+  .bgimg-4 {
+    background-image: url("./Images/end.jpg");
+    min-height: 100%;
+  }
+
+  .bgimg-5 {
+    background-image: url("./Images/White.jpg");
+    min-height: 400px;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #070302;
+  }
+
+  .caption div.border {
+    position: absolute;
+    background-color: #070302;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    width: 50%;
+    left: 25%;
+  }
+
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #070302;
+  }
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5 {
+      background-attachment: scroll;
+    }
+
+    .bgimg-4 {
+      min-height: 400px;
+    }
+  }
+
+  /* The sidebar menu */
+  .sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #070302;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+  }
+
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+
+  /* The button used to open the sidebar */
+  .openbtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #44444444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    z-index: 1;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 20px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+
+    .sidebar a {
+      font-size: 18px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#About" onclick="closeNav()">About</a>
+    <a href="#Services" onclick="closeNav()">Services</a>
+    <a href="#Pricing" onclick="closeNav()">Pricing</a>
+    <a href="#Contact" onclick="closeNav()">Contact</a>
+  </div>
+
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+  <div class="bgimg-4">
+    <div class="caption">
+      <img src="./Images/ScriptLogoMainE8E8CCpng.png" height=200px></img>
+    </div>
+  </div>
+
+  <div style="position:relative;">
+    <div id="About" style="color:#E8E8CC;background-color:#070302;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="color:#E8E8CC; text-align:center;">WELCOME TO BEYOND COACHING</h3>
+      <p> Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis.
+        Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque
+        risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam
+        maecenas, porta porttitor placerat leo.</p>
+    </div>
+  </div>
+
+  <div class="bgimg-1">
+    <div class="caption">
+      <img src="./Images/ScriptLogoMainFFCC1D.png" height=200px></img>
+    </div>
+  </div>
+
+  <div style="position:relative;">
+    <div id="Services" style="color:#070302;background-color:#b79214;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">YOUR FUTURE STARTS TODAY</h3>
+      <p> Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis.
+        Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque
+        risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam
+        maecenas, porta porttitor placerat leo.</p>
+    </div>
+  </div>
+
+  <div class="bgimg-2">
+    <div class="caption">
+      <img src="./Images/ScriptLogoMain116530png.png" height=200px></img>
+    </div>
+  </div>
+
+  <div id="Pricing" style="color: #E8E8CC;background-color:#0B4619;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="color: #E8E8CC;text-align:center;">PRICING</h3>
+    <p> Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis.
+      Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque
+      risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam
+      maecenas, porta porttitor placerat leo.</p>
+  </div>
+
+  <div class="bgimg-3">
+    <div class="caption">
+      <img src="./Images/ScriptLogoMain.png" height=200px></img>
+    </div>
+  </div>
+
+  <div style="position:relative;">
+    <div id="Contact" style="color:#070302;background-color:#E8E8CC;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">GET IN TOUCH</h3>
+      <form action="/" method="post">
+        <div class="form-floating">
+          <input type="text" class="form-control top" placeholder="" id="name" name="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control" placeholder="" id="email" name="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="form-floating">
+          <select class="form-select" id="service" aria-label="Service select">
+            <option selected value="1">Bookings</option>
+            <option value="2">Coaching</option>
+            <option value="3">Services</option>
+            <option value="4">Pricing</option>
+          </select>
+          <label for="floatingSelect">Choose a topic</label>
+        </div>
+        <div class="form-floating">
+          <textarea type="text" class="form-control bottom" placeholder="Leave a comment here" id="enquiry" name="enquiry" style="height: 100px"></textarea>
+          <label for="enquiry">Enquiry</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sort me life out!</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="bgimg-5">
+    <div class="caption">
+      <div class="border">
+        &copy;Beyond Coaching 2021
+
+        <br />
+        <a href="https://www.instagram.com/simontking"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/simon-king-60300b30/"><i class="fab fa-linkedin"></i></a>
+
+      </div>
+    </div>
+    <div style="position: absolute; bottom: 0px; width: 100%; text-align: center; ">
+
+      <a style="color:#E8E8CC; font-size:10px; letter-spacing:1px;" href="mailto:simonkingwebdesign@gmail.com">Simon King Web Design</i></a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+
+</html>

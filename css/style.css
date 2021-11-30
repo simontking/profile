@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Scope+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre&display=swap');
 head {
   background-color: hsl(230, 18%, 93%);
   color: hsl(230, 54%, 26%);
 }
 
 body {
-  background-color: hsl(230, 18%, 93%);
+  background-color: hsl(230, 18%, 10%);
   color: hsl(230, 54%, 26%);
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   text-align: center;
   margin: 0;
+}
+
+main {
+  height: 1000px;
+  margin: 0 auto;
+  background-image: url('../Images/bodies.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+}
+header {
+  text-align: right;
 }
 
 strong {
@@ -22,12 +35,20 @@ a {
   color: hsl(169, 54%, 27%);
 }
 
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 132px;
+  padding-left: 10px;
+  font-weight: lighter;
+  margin-top: 0;
+}
 h1 {
-  margin: 0 auto 0 auto;
-  font-family: 'Scope One', serif;
-  font-weight: 800;
-  font-size: 3em;
-
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 270px;
+  padding-left: 10px;
+  margin-top: -193px;
+  align-self: flex-end;
+  font-weight: bold;
 }
 
 h3 {
@@ -47,6 +68,18 @@ table {
   color: hsl(230, 54%, 26%);
   width: 50%;
   margin: 0 auto 0 auto;
+}
+
+#skills{
+  display: none;
+}
+
+#hobbies{
+  display: none;
+}
+
+#dogs{
+  display: none;
 }
 
 .bg {
@@ -102,7 +135,7 @@ table {
 }
 
 .moon {
-  width: 50%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
